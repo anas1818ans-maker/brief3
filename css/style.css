@@ -1,0 +1,79 @@
+@import "tailwindcss";
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-areas: "title title category priority" " description description description description";
+  gap: 20px;
+}
+
+.title-area {
+  grid-area: title;
+}
+
+.category-area {
+  grid-area: category;
+}
+
+.priority-area {
+  grid-area: priority;
+}
+.description-area {
+  grid-area: description;
+}
+@media (max-width: 834px) {
+    
+.form-grid {
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  grid-template-areas: "title category" "priority description";
+  gap: 20px;
+}
+
+.title-area {
+  grid-area: title;
+}
+
+.category-area {
+  grid-area: category;
+}
+
+.priority-area {
+  grid-area: priority;
+}
+.description-area {
+ grid-area: description;
+}
+
+}
+
+@media (max-width: 375px) {
+    
+.form-grid {
+  display: grid;
+  grid-template-columns:  1fr  ;
+  grid-template-areas: "title "" category" "priority ""description";
+  gap: 20px;
+}
+
+.title-area {
+  grid-area: title;
+}
+
+.category-area {
+  grid-area: category;
+}
+
+.priority-area {
+  grid-area: priority;
+}
+.description-area {
+ grid-area: description;
+}
+}
+
+
+
+
+
+
+    
