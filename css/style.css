@@ -6,6 +6,29 @@
   gap: 20px;
 }
 
+.icon{
+background-color: #656565;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  border-radius: 0.5rem;
+
+
+
+
+}
+.icon i{
+background-color: #656565;
+  width: auto;
+  height: auto;
+  margin: 0.5rem;
+  display: flex;
+  border-radius: 0.5rem;
+
+
+
+
+}
 .title-area {
   grid-area: title;
 }
